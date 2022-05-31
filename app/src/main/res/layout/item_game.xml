@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <data>
+        <import type="android.view.View"/>
+        <variable
+            name="item"
+            type="com.fernan.game.memory.data.model.GameBean"/>
+        <variable
+            name="state"
+            type="com.fernan.game.memory.data.model.State"/>
+    </data>
+-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+<!--
+        android:visibility="@{item.state instanceof com.fernan.game.memory.data.model.State.FOUND ? View.GONE :  View.VISIBLE}">
+-->
+
+
+
+        <!--front part of the card-->
+        <com.google.android.material.card.MaterialCardView
+            android:visibility="visible"
+            android:clickable="false"
+            android:focusable="false"
+            app:cardElevation="0dp"
+            android:id="@+id/card_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#00000000"
+            android:background="#00000000"
+            app:strokeColor="@color/md_red_A400"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            app:strokeWidth="5dp">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:scaleType="centerCrop" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:visibility="visible"
+            android:clickable="false"
+            android:focusable="false"
+            app:cardElevation="0dp"
+            android:id="@+id/card_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:strokeColor="@color/md_red_A400"
+            app:cardBackgroundColor="#00BC0404"
+            android:background="#00000000"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            app:strokeWidth="5dp">
+
+
+            <ImageView
+                android:id="@+id/imageBorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66CFF2"
+                android:scaleType="centerCrop" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="25dp"
+                android:alpha="0.8"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_question"
+                android:scaleType="centerCrop" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

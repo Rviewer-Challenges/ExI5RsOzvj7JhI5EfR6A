@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:background="#0003DAC5"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="25dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/baseBackground"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            tools:src="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.fernan.game.memory.ui.customViews.FilterTextView
+        android:id="@+id/title"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Trabajando ..."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingTop="20dp"
+        android:includeFontPadding="true"
+        android:background="@drawable/ic_ribbon_title"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+</LinearLayout>

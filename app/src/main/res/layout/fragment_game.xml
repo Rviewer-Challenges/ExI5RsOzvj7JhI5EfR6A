@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@color/black"
+    tools:context=".ui.fragments.GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margine_top" >
+
+        <ImageView
+            android:id="@+id/time_bar_image"
+            android:layout_width="@dimen/clock_width"
+            android:layout_height="@dimen/clock_height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/clock_margin_right"
+            android:src="@drawable/time_bar" />
+
+        <com.fernan.game.memory.ui.customViews.FilterTextView
+            android:id="@+id/time_bar_text"
+            android:layout_width="@dimen/clock_width"
+            android:layout_height="@dimen/clock_height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/clock_text_margin_right"
+            android:gravity="center"
+            android:shadowRadius="4"
+            android:text="00:60"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/clock_text_size" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="38dp"
+        android:layout_margin="25dp"
+        android:id="@+id/gamesRecycler"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_game"
+        tools:itemCount="9"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:spanCount="3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+
+</FrameLayout>

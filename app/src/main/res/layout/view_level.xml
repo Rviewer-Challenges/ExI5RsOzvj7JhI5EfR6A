@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/start3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/ic_start" />
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/start2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_start" />
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/start1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_start" />
+    <TextView
+        android:id="@+id/textLevel"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:fontFamily="@font/grobold"
+        android:shadowRadius="2"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowColor="@color/md_blue_900"
+        tools:text="Nivel 2"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/base"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:background="@drawable/levels_base"
+        android:scaleType="centerCrop" />
+
+
+</LinearLayout>
